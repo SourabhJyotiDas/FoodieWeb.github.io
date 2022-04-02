@@ -30,16 +30,15 @@ function changeImg() {
 }
 changeImg()
 
-
+let imgs = ['imgs/1.jpg', 'imgs/2.jpg', 'imgs/3.jpg', 'imgs/4.jpg', 'imgs/8.jpg', 'imgs/9.jpg', 'imgs/10.jpg']
 let main = document.getElementById('slide')
-
 function slides1() {
     let random = Math.floor(Math.random()*7)
-    main.src = images[random]
+    main.src = imgs[random]
 }
 function slides2() {
     let random = Math.floor(Math.random()*7)
-    main.src = images[random]
+    main.src = imgs[random]
 }
 
 function gallery(smallImg){
