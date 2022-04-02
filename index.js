@@ -47,4 +47,4 @@ setInterval(() => {
     happyCustomer.src = "imgs/"+backImg
     let reviewTxt = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odio quidem doloribus voluptatibus. Officia mollitia quis nobis. Fugit, culpa doloremque soluta laboriosam rerum officia ut numquam voluptate perferendis necessitatibus ea."
     customerReview.innerHTML = reviewTxt
-}, 3000);
+}, 2000);
