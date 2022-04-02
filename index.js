@@ -12,7 +12,25 @@ document.querySelector('.cross').addEventListener('click', () => {
 })
 
 
+let happyCustomer = document.getElementById('happy-customer');
+let customerReview = document.getElementById('review');
+
+
 let images =['imgs/1.jpg','imgs/2.jpg','imgs/3.jpg','imgs/4.jpg','imgs/8.jpg','imgs/9.jpg','imgs/10.jpg']
+let index = 0;
+function changeImg() {
+    happyCustomer.src = images[index];
+    if (index < images.length - 1) {
+        index++        
+    }
+    else {
+        index = 0;
+    }
+    setTimeout(changeImg, 3000)
+}
+changeImg()
+
+
 let main = document.getElementById('slide')
 
 function slides1() {
@@ -37,14 +55,10 @@ function load(){
 load()
 
 
-let happyCustomer = document.getElementById('happy-customer');
-let customerReview = document.getElementById('review');
 
 
-setInterval(() => {
-    let imgs =['sl-1.jpg','sl-2.jpg','sl-3.jpg','sl-4.jpg'];
-    let backImg =imgs[Math.floor(Math.random()*imgs.length)]
-    happyCustomer.src = "imgs/"+backImg
-    let reviewTxt = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus odio quidem doloribus voluptatibus. Officia mollitia quis nobis. Fugit, culpa doloremque soluta laboriosam rerum officia ut numquam voluptate perferendis necessitatibus ea."
-    customerReview.innerHTML = reviewTxt
-}, 2000);
+
+
+
+
+
