@@ -30,10 +30,10 @@ function gallery(smallImg){
 }
 
 
-// let preloader = document.getElementById('preloader');
-// window.addEventListener('load',()=>{
-//         document.querySelector('.preloader').classList.toggle('hidden');
-// })
+let preloader = document.getElementById('preloader');
+window.addEventListener('load',()=>{
+        document.querySelector('.preloader').classList.toggle('hidden');
+})
 
 
 let happyCustomer = document.getElementById('happy-customer');
