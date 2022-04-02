@@ -11,9 +11,6 @@ document.querySelector('.cross').addEventListener('click', () => {
     document.querySelector('.nav').classList.toggle('hidden');
 })
 
-function playvideo(){
-    document.querySelector('.iframe').classList.toggle('hidden')
-}
 
 let images =['imgs/1.jpg','imgs/2.jpg','imgs/3.jpg','imgs/4.jpg','imgs/8.jpg','imgs/9.jpg','imgs/10.jpg']
 let main = document.getElementById('slide')
@@ -35,7 +32,7 @@ function gallery(smallImg){
 
 let preloader = document.getElementById('preloader');
 window.addEventListener('load',()=>{
-    preloader.style.display = 'none';
+        document.querySelector('.preloader').classList.toggle('hidden');
 })
 
 
