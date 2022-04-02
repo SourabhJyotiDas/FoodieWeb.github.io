@@ -29,11 +29,12 @@ function gallery(smallImg){
     aboutMain.src = smallImg.src
 }
 
-
-let preloader = document.getElementById('preloader');
-window.addEventListener('load',()=>{
-        document.querySelector('.preloader').classList.toggle('hidden');
-})
+function load(){    
+    setTimeout(() => {
+        document.querySelector('.preloader').classList.toggle('hidden')
+    }, 3000);
+}
+load()
 
 
 let happyCustomer = document.getElementById('happy-customer');
