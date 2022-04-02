@@ -16,7 +16,7 @@ let happyCustomer = document.getElementById('happy-customer');
 let customerReview = document.getElementById('review');
 
 
-let images =['imgs/1.jpg','imgs/2.jpg','imgs/3.jpg','imgs/4.jpg','imgs/8.jpg','imgs/9.jpg','imgs/10.jpg']
+let images =['imgs/sl-1.jpg','imgs/sl-2.jpg','imgs/sl-3.jpg','imgs/sl-4.jpg']
 let index = 0;
 function changeImg() {
     happyCustomer.src = images[index];
