@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/input.css">
+    <title>Foodie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Josefin+Sans:wght@300&family=Montserrat:wght@200&family=Open+Sans&family=Source+Sans+Pro:wght@200&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="">
+
+    <div id="preloader" class=" h-[100vh] w-[100%] bg-white fixed flex justify-center items-center z-50">
+        <img class="h-[500px]  animate-[zoom-out] " src="imgs/Thirty Pizzas!.gif" alt="">
+    </div>
+
+    <div
+        class=" NAVBAR  danger-font flex sticky top-0 bg-white  justify-between items-center py-3 px-4 z-10 lg:flex lg:justify-center lg:px-10 lg:items-center">
+        <div class="primary-font font-medium text-5xl md:text-7xl lg:hidden">
+            <h1>Foodie</h1>
+        </div>
+
+        <div id="hamburger" class=" ham lg:hidden"> <img src="imgs/iconmonstr-fast-food-2.svg" alt=""></div>
+        <div id="" class="hidden cross"> <img src="imgs/iconmonstr-eat-1.svg" alt=""></div>
+        <div class="hidden"><img src="imgs/iconmonstr-x-mark-thin.svg" alt=""></div>
+
+        <div class="hidden md:hidden lg:flex lg:justify-center lg:px-10 lg:items-center ">
+            <div class="flex items-center justify-center space-x-5">
+                <div
+                    class="hover:underline hover:underline-offset-4 cursor-pointer hover:text-red-500 ease-in duration-200">
+                    <a href="#Home">Home</a></div>
+                <div
+                    class="hover:underline hover:underline-offset-4 cursor-pointer hover:text-red-500 ease-in duration-200">
+                    <a href="#About">About</a></div>
+                <div
+                    class="hover:underline hover:underline-offset-4 cursor-pointer hover:text-red-500 ease-in duration-200">
+                    <a href="#SpeacialDishes">Speacial
+                        Dishes</a></div>
+
+            </div>
+            <div>
+                <div
+                    class="primary-font font-medium text-5xl md:text-7xl lg:px-20 cursor-pointer hover:text-red-500 ease-in duration-300">
+                    <h1><a href="#">Foodie</a></h1>
+                </div>
+            </div>
+            <div class="flex items-center justify-center space-x-5">
+                <div
+                    class="hover:underline hover:underline-offset-4 cursor-pointer hover:text-red-500 ease-in duration-200">
+                    <a href="#Menu">Menu</a></div>
+                <div
+                    class="hover:underline hover:underline-offset-4 cursor-pointer hover:text-red-500 ease-in duration-200">
+                    <a href="#Team">Team</a></div>
+                <div
+                    class="hover:underline hover:underline-offset-4 cursor-pointer hover:text-red-500 ease-in duration-200">
+                    <a href="#Reservation">Reservation</a></div>
+                <div><img src="imgs/iconmonstr-search-thin.svg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hidden nav danger-font space-x-8 fixed  w-screen space-y-4 z-10 bg-gray-300">
+        <div></div>
+        <div class="hover:underline hover:underline-offset-4"><a href="#Home">Home</a></div>
+        <div class="hover:underline hover:underline-offset-4"><a href="#About">About</a></div>
+        <div class="hover:underline hover:underline-offset-4"><a href="#SpeacialDishes">Speacial Dishes</a></div>
+        <div class="hover:underline hover:underline-offset-4"><a href="#Menu">Menu</a></div>
+        <div class="hover:underline hover:underline-offset-4"><a href="#Team">Team</a></div>
+        <div class="hover:underline hover:underline-offset-4"><a href="#Reservation">Reservation</a></div>
+        <div><img src="imgs/iconmonstr-search-thin.svg" alt=""></div>
+        <div></div>
+    </div>
+
+
+    <div id="Home" class=" lg:flex lg:px-10 lg:justify-evenly lg:items-center ">
+
+        <div class="lg:w-[40vw] ">
+            <div
+                class="WE-LOVE secondary-font text-5xl font-extralight w-screen py-8  flex items-center px-4 md:px-10 md:text-5xl  lg:px-0 lg:text-6xl">
+                <div class="">We Love <div class=" md:w-[20ch] md:py-3">Delicious Foods!</div>
+                </div>
+            </div>
+            <div class="EXPLORE flex items-center py-5 px-4 md:px-10 lg:px-0">
+                <div class=""><button
+                        class="bg-red-500 hover:bg-red-400 hover:text-black ease-in duration-200  text-white rounded-3xl py-2 px-6 font-bold text-sm">Explore
+                        Menu</button></div>
+                <div id="playVideo" onclick="playvideo()"
+                    class="cursor-pointer flex items-center font-bold text-sm px-3  hover:underline hover:underline-offset-4">
+                    <img class="pr-2" src="imgs/iconmonstr-video-thin.svg" alt="">
+                    <a href="https://www.youtube.com/embed/B8p1w0OQqlk">Play Video</a>
+                   
+                </div>
+            </div>
+            <div
+                class="ICONS secondary-font flex justify-center  py-8 space-x-10 font-semibold text-base md:justify-start md:px-10 lg:px-0">
+                <div
+                    class="flex flex-col justify-center items-center text-center w-[5ch] md:min-w-max md:font-normal md:text-xl link">
+                    <img class="py-2" src="imgs/iconmonstr-time-19.svg" alt=""> Fast Delivery
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center text-center w-[6ch]  md:min-w-max md:font-normal md:text-xl link">
+                    <img class="py-2" src="imgs/iconmonstr-leaf-1.svg" alt=""> Fresh Food
+                </div>
+                <div
+                    class="flex flex-col justify-center items-center text-center w-[5ch] md:min-w-max md:font-normal md:text-xl link">
+                    <img class="py-2" src="imgs/iconmonstr-delivery-9.svg" alt=""> 24/7 Support
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="SLIDER py-10 px-4 md:px-10 md:flex  md:justify-around lg:flex lg:flex-col lg:justify-center lg:items-center lg:w-[30vw]">
+
+            <div class="md:m-auto md:w-[70vw] lg:w-[100%] ">
+                <img id="slide" class=" h-[70vh] w-[100%] md:w-[60%] lg:w-[100%] lg:h-[70vh]" src="imgs/1.jpg" alt="">
+            </div>
+
+            <div class="flex justify-between md:items-center">
+                <div onclick="slides1()"
+                    class="flex cursor-pointer justify-center items-center w-[30vw] md:w-[10vw] h-[10vh] bg-slate-500 mx-2">
+                    <div><img src="imgs/iconmonstr-previous-thin.svg" alt=""></div>
+                </div>
+
+                <div onclick="slides2()"
+                    class="flex cursor-pointer justify-center items-center w-[30vw] md:w-[10vw] h-[10vh] bg-slate-500 mx-2">
+                    <div class=""><img src="imgs/iconmonstr-next-thin.svg" alt=""></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="About" class="md:flex md:items-center md:px-10  md:justify-center lg:m-auto lg:space-x-10">
+        <img id="aboutMain" class="py-10 md:w-[45vw] md:h-[100vh]  lg:w-[40vw] " src="imgs/2.jpg" alt="">
+        <div class="px-4 lg:w-[40vw] ">
+            <div class="text-xm text-red-400 danger-font">About</div>
+            <div class="font-semibold secondary-font  text-3xl"> Welcome to Foodie</div>
+            <div class="py-8 danger-font">
+                <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus ipsum sit accusamus. Velit
+                    obcaecati exercitationem, quia laudantium est, amet qui, perferendis iusto natus eos unde architecto
+                    itaque! Corrupti, voluptatum esse!
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur ex quidem, itaque optio,
+                    laborum temporibus excepturi non soluta inventore quaerat iusto harum aliquam!
+                </p>
+            </div>
+            <div class="SPECIAL-RECIPE hidden md:block px-4 secondary-font">
+                <div class="font-semibold text-2xl  ">Special Recipe</div>
+                <div class="flex justify-center items-center font-semibold text-sm text-red-600 py-4">
+                    <div class="px-2">
+                        <div class="w-[10vw] lg:w-[10vw]"><img
+                                class="md:w-[10vw] md:h-[20vh] lg:h-[30vh] cursor-pointer opacity-[0.6] hover:opacity-[1]"
+                                onclick="gallery(this)" src="imgs/3.jpg" alt="">
+                            <div class="py-2 hover:underline hover:underline-offset-4">Australian Organic Beef</div>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="w-[10vw] lg:w-[10vw]"><img
+                                class="md:w-[10vw] md:h-[20vh] lg:h-[30vh] cursor-pointer opacity-[0.6] hover:opacity-[1]"
+                                onclick="gallery(this)" src="imgs/4.jpg" alt="">
+                            <div class="py-2 hover:underline hover:underline-offset-4">Australian Organic Beef</div>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <div class="w-[10vw] lg:w-[10vw]"><img
+                                class="md:w-[10vw] md:h-[20vh] lg:h-[30vh] cursor-pointer opacity-[0.6] hover:opacity-[1]"
+                                onclick="gallery(this)" src="imgs/5.jpg" alt="">
+                            <div class="py-2 hover:underline hover:underline-offset-4">Australian Organic Beef</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="SPECIAL-recipe px-4 md:hidden lg:hidden secondary-font">
+        <div class="font-semibold text-2xl">Special Recipe</div>
+        <div class="flex justify-center font-semibold text-sm text-red-600 py-4">
+            <div class="px-2">
+                <div class="w-[25vw]"><img src="imgs/5.jpg" alt="">
+                    <div class="py-2 hover:underline hover:underline-offset-4">Australian Organic Beef</div>
+                </div>
+            </div>
+            <div class="px-2">
+                <div class="w-[25vw]"><img src="imgs/6.jpg" alt="">
+                    <div class="py-2 hover:underline hover:underline-offset-4">Australian Organic Beef</div>
+                </div>
+            </div>
+            <div class="px-2">
+                <div class="w-[25vw]"><img src="imgs/7.jpg" alt="">
+                    <div class="py-2 hover:underline hover:underline-offset-4">Australian Organic Beef</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="SPECIAL-DISHES md:px-10 lg:px-10 ">
+        <div class=" px-4 text-center py-14">
+            <div class="text-red-400">Specialities</div>
+            <div id="SpeacialDishes" class="font-bold text-3xl lg:text-3xl secondary-font">Special Dishes</div>
+        </div>
+
+        <div class="px-4 ">
+            <div class="font-extrabold text-3xl lg:pl-20">01.</div>
+            <div class="md:flex md:justify-center md:items-center ">
+                <div class="pl-16 md:w-[40vw] lg:w-[40vw] lg:pl-0">
+                    <div class="font-medium text-2xl lg:px-20">
+                        <div class="text-red-500 font-semibold secondary-font">Beef</div>
+                        <div class=" secondary-font font-semibold">Steak Sauce</div>
+                        <div class="text-base font-semibold p-font">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Sint,
+                            nemo cupiditate nesciunt eos, alias cumqurepellat dolor at, odio quae sapiente
+                            recusandae.enim
+                            perferendis debitis suscipit tempora fugit, similique sint ut, cumque error distinctio.
+                        </div>
+                        <div class="text-2xl  font-semibold py-5">$15.00</div>
+                        <button
+                            class="px-4 py-2 font-thin text-base bg-red-600 hover:bg-red-400 hover:text-black rounded-3xl ease-in duration-200  text-white">Book
+                            A
+                            Table</button>
+                    </div>
+                </div>
+                <div class="py-10 flex justify-center"><img class="h-[70vh] shadow-2xl lg:w-[30vw] lg:rounded-lg"
+                        src="imgs/3.jpg" alt=""></div>
+            </div>
+        </div>
+
+
+
+
+        <div class="px-4 lg:px-10">
+            <div class="font-extrabold text-3xl lg:pl-20">02.</div>
+            <div class="md:flex md:flex-row-reverse md:justify-center md:items-center">
+                <div class="pl-16 lg:pr-5 md:w-[50vw] lg:w-[40vw] lg:pl-0">
+                    <div class="font-medium text-2xl lg:px-20">
+                        <div class="text-red-500 font-semibold secondary-font">Beef</div>
+                        <div class="secondary-font font-semibold">Steak Sauce</div>
+                        <div class="text-base font-semibold p-font">Lorem ipsum dolor sit amet consectetur, adipisicing
+                            elit.
+                            Sint,
+                            nemo cupiditate nesciunt eos, alias cumqurepellat dolor at, odio quae sapiente
+                            recusandae.enim
+                            perferendis debitis suscipit tempora fugit, similique sint ut, cumque error distinctio.
+                        </div>
+                        <div class="text-2xl  font-semibold py-5">$15.00</div>
+                        <button
+                            class="px-4 py-2 font-thin text-base bg-red-600 hover:bg-red-400 hover:text-black  ease-in duration-200  rounded-3xl text-white">Book
+                            A
+                            Table</button>
+                    </div>
+                </div>
+                <div class="py-10 flex justify-center"><img class="h-[70vh] shadow-2xl lg:w-[30vw] lg:rounded-lg"
+                        src="imgs/5.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="Menu" class="text-center px-4 md:px-10 lg:m-auto lg:w-[80vw] ">
+        <div class="py-10">
+            <div class="text-red-300"> Specialities</div>
+            <div class="font-extrabold text-3xl secondary-font">Our Menu</div>
+        </div>
+        <div class="lg:flex lg:justify-center lg:items-center">
+            <div class="lg:w-[30vw] lg:px-5">
+                <div class="font-semibold text-2xl py-7 secondary-font">Breakfast</div>
+
+                <div class="flex justify-between py-3 ">
+                    <div class="flex">
+                        <img class="rounded-full h-20" src="imgs/0.jpg" alt="">
+                        <div class="px-5 text-left">
+                            <div class="w-[4ch] text-xl">Egg Sandwich</div>
+                            <div>Meat Ball, Mie</div>
+                        </div>
+                    </div>
+                    <div class="text-xl font-thin">$30</div>
+                </div>
+                <hr>
+                <div class="flex justify-between py-3">
+                    <div class="flex">
+                        <img class="rounded-full h-20" src="imgs/0.jpg" alt="">
+                        <div class="px-5 text-left">
+                            <div class="w-[4ch] text-xl">Egg Sandwich</div>
+                            <div>Meat Ball, Mie</div>
+                        </div>
+                    </div>
+                    <div class="text-xl font-thin">$30</div>
+                </div>
+                <hr>
+                <div class="flex justify-between py-3">
+                    <div class="flex">
+                        <img class="rounded-full h-20" src="imgs/0.jpg" alt="">
+                        <div class="px-5 text-left">
+                            <div class="w-[4ch] text-xl">Egg Sandwich</div>
+                            <div>Meat Ball, Mie</div>
+                        </div>
+                    </div>
+                    <div class="text-xl font-thin">$30</div>
+                </div>
+                <hr>
+            </div>
+            <div class="lg:w-[30vw] lg:px-5">
+                <div class="font-semibold text-2xl py-7 secondary-font">Launch</div>
+
+                <div class="flex justify-between py-3">
+                    <div class="flex">
+                        <img class="rounded-full h-20" src="imgs/0.jpg" alt="">
+                        <div class="px-5 text-left">
+                            <div class="w-[4ch] text-xl">Egg Sandwich</div>
+                            <div>Meat Ball, Mie</div>
+                        </div>
+                    </div>
+                    <div class="text-xl font-thin">$30</div>
+                </div>
+                <hr>
+                <div class="flex justify-between py-3">
+                    <div class="flex">
+                        <img class="rounded-full h-20" src="imgs/0.jpg" alt="">
+                        <div class="px-5 text-left">
+                            <div class="w-[4ch] text-xl">Egg Sandwich</div>
+                            <div>Meat Ball, Mie</div>
+                        </div>
+                    </div>
+                    <div class="text-xl font-thin">$30</div>
+                </div>
+                <hr>
+                <div class="flex justify-between py-3">
+                    <div class="flex">
+                        <img class="rounded-full h-20" src="imgs/0.jpg" alt="">
+                        <div class="px-5 text-left">
+                            <div class="w-[4ch] text-xl">Egg Sandwich</div>
+                            <div>Meat Ball, Mie</div>
+                        </div>
+                    </div>
+                    <div class="text-xl font-thin">$30</div>
+                </div>
+                <hr>
+            </div>
+            <div class="lg:w-[30vw] lg:px-5">
+                <div class="font-semibold text-2xl py-7 secondary-font">Dinner</div>
+
+                <div class="flex justify-between py-3">
+                    <div class="flex">
+                        <img class="rounded-full h-20" src="imgs/0.jpg" alt="">
+                        <div class="px-5 text-left">
+                            <div class="w-[4ch] text-xl">Egg Sandwich</div>
+                            <div>Meat Ball, Mie</div>
+                        </div>
+                    </div>
+                    <div class="text-xl font-thin">$30</div>
+                </div>
+                <hr>
+                <div class="flex justify-between py-3">
+                    <div class="flex">
+                        <img class="rounded-full h-20" src="imgs/0.jpg" alt="">
+                        <div class="px-5 text-left">
+                            <div class="w-[4ch] text-xl">Egg Sandwich</div>
+                            <div>Meat Ball, Mie</div>
+                        </div>
+                    </div>
+                    <div class="text-xl font-thin">$30</div>
+                </div>
+                <hr>
+                <div class="flex justify-between py-3">
+                    <div class="flex">
+                        <img class="rounded-full h-20" src="imgs/0.jpg" alt="">
+                        <div class="px-5 text-left">
+                            <div class="w-[4ch] text-xl">Egg Sandwich</div>
+                            <div>Meat Ball, Mie</div>
+                        </div>
+                    </div>
+                    <div class="text-xl font-thin">$30</div>
+                </div>
+                <hr>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="happy-customer h-[100vh] w-[100%] left-0 top-0  relative py-10">
+        <img id="happy-customer" class="w-[100%] h-[100%] opacity-90 " src="imgs/sl-1.jpg" alt="">
+        <div
+            class="text-box text-center flex flex-col justify-center items-center text-white absolute top-[25%] md:left-[25%] lg:left-[40%] ">
+            <h1 class="font-bold text-5xl py-5">Happy-Customer</h1>
+            <p class="w-[25ch] font-medium"> --- <span id="review"></span> ---</p>
+        </div>
+    </div>
+
+
+
+    <div id="Team" class="OUR-TEAMS px-4 py-5 text-center md:px-10 lg:w-[70%] lg:m-auto">
+        <div class="py-4">
+            <div class="text-red-400 text-sm">Specialties</div>
+            <div class="text-3xl font-extrabold secondary-font">Our Team</div>
+        </div>
+
+        <div class="md:flex md:justify-between secondary-font">
+            <div class="my-5 h-[90vh]  bg-[url('imgs/chef2.jpg')] bg-cover  md:w-[30vw] md:h-[60vh] lg:h-[80vh]">
+                <div
+                    class=" relative  bg-black text-white lg:bg-white lg:text-black min-w-min text-xl font-medium -bottom-[75vh] lg:-bottom-[65vh] mx-5 hover:bg-red-400 hover:text-white cursor-pointer  ease-in duration-200">
+                    Sourabh Jr.
+                    <div class="font-thin">CEO</div>
+                </div>
+            </div>
+            <div class="my-5 h-[90vh] bg-[url('imgs/chef1.jpg')] bg-cover md:w-[30vw] md:h-[60vh] md:mx-4 lg:h-[80vh]">
+                <div
+                    class=" relative bg-black text-white lg:bg-white lg:text-black min-w-min text-xl font-medium -bottom-[75vh] lg:-bottom-[65vh] mx-5 hover:bg-red-400 hover:text-white cursor-pointer ease-in duration-200">
+                    Daniel Tebas
+                    <div class="font-thin">Chef</div>
+                </div>
+            </div>
+            <div class="my-5 h-[90vh] bg-[url('imgs/chef3.jpg')] bg-cover  md:w-[30vw] md:h-[60vh] lg:h-[80vh]">
+                <div
+                    class=" relative bg-black text-white lg:bg-white lg:text-black min-w-min text-xl font-medium -bottom-[75vh] lg:-bottom-[65vh] mx-5 hover:bg-red-400 hover:text-white cursor-pointer ease-in duration-200">
+                    Jon Snow
+                    <div class="font-thin">Chef</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="Reservation" class="BOOK-NOW  py-5 h-[110vh] lg:py-20">
+        <div class="h-[80vh] w-[100%] bg-[url('imgs/Reservation-bg.jpg')] bg-cover">
+
+
+
+            <div
+                class="text-center mx-4 drop-shadow-2xl bottom-96 bg-white relative top-5 md:mx-10 md:px-10 lg:w-[30vw] lg:top-32 lg:left-32">
+                <div class="py-5">
+                    <h3 class="text-red-300">Reservation</h3>
+                    <h1 class="font-bold text-2xl md:text-4xl secondary-font">Book Now</h1>
+                </div>
+
+                <div><input class="py-1 px-6 md:w-full border border-black rounded my-2" type="text" placeholder="Name">
+                </div>
+                <div><input class="py-1 px-6 md:w-full border border-black rounded my-2" type="email"
+                        placeholder="Email">
+                </div>
+                <div><input class="py-1 px-6 md:w-full border border-black rounded my-2" type="phone"
+                        placeholder="Phone">
+                </div>
+                <div><input class="py-1 px-8 md:w-full border border-black rounded my-2" type="date" name="" id="">
+                </div>
+                <div><input class="py-1 px-6 md:w-full border border-black rounded my-2" type="time" name="" id="">
+                </div>
+                <div><input class="py-10 px-6 md:w-full md:py-20 border border-black rounded my-2" type="text" name=""
+                        id="" placeholder="Your Message..."></div>
+                <button
+                    class="py-2 px-4 bg-red-500  hover:bg-red-300 hover:text-black ease-in duration-200 font-semibold text-white rounded-full mb-10">Send
+                    Message</button>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+    <div class="ENDING px-4 md:px-10 lg:flex lg:space-x-10 lg:py-10 lg:w-[80vw] lg:m-auto">
+
+        <div class=" lg:w-[30vw]">
+            <div class="primary-font text-5xl font-semibold">Foodie</div>
+            <div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consectetur quis eaque animi, ea
+                    doloribus
+                    aperiam tempore illum illo debitis incidunt? Porro quaerat inventore hic, officiis commodi
+                    repellat
+                    eos? Repellat maiores quos explicabo sed! Excepturi?</p>
+            </div>
+
+            <div class="py-8 space-x-4 flex">
+                <div><img class="cursor-pointer hover:bg-red-500 hover:text-white ease-in duration-200 "
+                        src="imgs/iconmonstr-facebook-1.svg" alt=""></div>
+                <div><img class="cursor-pointer hover:bg-red-500 hover:text-white ease-in duration-200 "
+                        src="imgs/iconmonstr-twitter-1.svg" alt=""></div>
+                <div><img class="cursor-pointer hover:bg-red-500 bg ease-in duration-200 "
+                        src="imgs/iconmonstr-instagram-11.svg" alt=""></div>
+            </div>
+
+        </div>
+
+        <div class="lg:w-[30vw]">
+
+            <div class="text-2xl py-4 lg:font-medium secondary-font font-semibold"> Open Hours</div>
+            <div class="flex justify-between">
+                <div>
+                    <div class="days">Monday</div>
+                    <div class="days">Tuesday</div>
+                    <div class="days">Wednessday</div>
+                    <div class="days">Thursday</div>
+                    <div class="days">Friday</div>
+                    <div class="days">saturday</div>
+                    <div class="days">Sunday</div>
+                </div>
+                <div>
+                    <div>9:00 - 24:00</div>
+                    <div>9:00 - 24:00</div>
+                    <div>9:00 - 24:00</div>
+                    <div>9:00 - 24:00</div>
+                    <div>9:00 - 24:00</div>
+                    <div>9:00 - 24:00</div>
+                    <div class="text-right">Closed</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lg:w-[30vw] ">
+            <div class="py-4">
+                <h1 class="text-2xl py-2 lg:font-medium secondary-font font-semibold">Newsletter</h1>
+                <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolores distinctio, incidunt quae
+                    voluptatum
+                    assumenda fuga maxime?</div>
+            </div>
+            <div class=" border border-black rounded "><input class="w-full py-2 md:w-full" type="email" name="" id=""
+                    placeholder="Enter email"></div>
+            <div
+                class="bg-red-500 rounded-full text-white text-center my-5 hover:bg-red-300 hover:text-black ease-in duration-200 ">
+                <button class="px-8 py-2  font-bold ">Submit</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="px-4 py-10 text-center">
+        <p>
+            Copyright 2077. All Rights Reserved. Design by <span class="text-red-600">
+                <a href="https://www.instagram.com/sourabh_jyoti_das/">SOURABH JYOTI DAS</a>
+            </span>
+        </p>
+
+    </div>
+
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
